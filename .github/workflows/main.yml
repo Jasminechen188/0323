@@ -1,14 +1,14 @@
-name : Run my python
+name: Run my python
 
 on : 
-  push: #do this every time
+    push: # do this every push
 jobs:
   build:
-    name: set up environment
-    runs-on: ubuntu-lastset
-    steps:  
-    - uses: actions/checkout@v2
+    name: Set up environment
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2 # what kind of github action version to use
   
     - name: Run my python
-    run: |
-      python3 test1.py
+      run: |
+         python3 test.py
