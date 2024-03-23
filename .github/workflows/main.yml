@@ -4,11 +4,11 @@ on :
   push: #do this every time
 jobs:
   build:
-  name: set up environment
-  runs-on: ubuntu-lastset
-  steps:  
-  - uses: actions/checkout@v2
+    name: set up environment
+    runs-on: ubuntu-lastset
+    steps:  
+    - uses: actions/checkout@v2
   
-  - name: Run my python
-  run:
-    python3 test1.py
+    - name: Run my python
+    run: |
+      python3 test1.py
